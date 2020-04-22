@@ -6,7 +6,7 @@ class Backtesting(Value_at_Risk):
     def __init__(self, df):
         super().__init__(df)
     def __del__(self):
-        super().__init__()
+        super().__del__()
     def __repr__(self):
         return '<%s.%s object at %s>' % (
         self.__class__.__module__,

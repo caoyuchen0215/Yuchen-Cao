@@ -14,7 +14,8 @@ def std(df, weight=None):
     return std
 
 def cov(df, df2, weight=None):
-    num1, num2 = np.array(list(zip(df, df2)))
+    num1 = np.array(df)
+    num2 = np.array(df2)
     cov = mean((num1 - mean(df, weight=weight))*(num2 - mean(df2, weight=weight)), weight=weight)
     return cov
 
